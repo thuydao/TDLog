@@ -1,40 +1,35 @@
 #
-# Be sure to run `pod lib lint TDLog.podspec' to ensure this is a
-# valid spec before submitting.
+# Be sure to run `pod lib lint TDCore.podspec' to ensure this is a
+# valid spec and remove all comments before submitting the spec.
 #
-# Any lines starting with a # are optional, but their use is encouraged
+# Any lines starting with a # are optional, but encouraged
+#
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = "TDLog"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of TDLog."
+s.name             = "TDLog"
+s.version          = "1.0.0"
+s.summary          = "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer"
+s.description      = "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer, so they are quick detect error & resolved it"
+s.homepage         = "https://github.com/thuydao/TDLog"
+s.license          = 'MIT'
+s.author           = { "Thuỷ Đào" => "daoduythuy@gmail.com" }
+s.source           = { :git => "https://github.com/thuydao/TDLog.git", :tag => s.version.to_s }
+# s.social_media_url = 'https://www.facebook.com/daoduythuy'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+s.ios.vendored_frameworks = 'Frameworks/TDLog.framework'
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TDLog"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "Mr Sa" => "daoduythuy@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TDLog.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.platform     = :ios, '7.0'
+s.requires_arc = true
+s.frameworks   = ['Foundation', 'UIKit', 'CoreGraphics', 'QuartzCore', 'CoreFoundation']
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+#s.source_files = 'TDLog/*'
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TDLog' => ['Pod/Assets/*.png']
-  }
+s.resource_bundles = {
+'TDCore' => ['Resources/*.{bundle}']
+}
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.frameworks = 'UIKit', 'MapKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end

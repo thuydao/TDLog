@@ -7,6 +7,8 @@
 //
 
 #import "TDViewController.h"
+#import <TDLog/TDLog.h>
+
 
 @interface TDViewController ()
 
@@ -17,13 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  TDLOG(@"abcdef");
+  
+  [[TDLogManagement td_sharedInstance] td_show];
 }
 
 @end
