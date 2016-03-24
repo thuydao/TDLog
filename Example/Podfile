@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TDLog_Example', :exclusive => true do
+  pod 'TDLog', :path => '../'
+end
+
+target 'TDLog_Tests', :exclusive => true do
+  pod 'TDLog', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
