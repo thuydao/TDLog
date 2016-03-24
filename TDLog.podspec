@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "TDLog"
-s.version          = "1.0.1"
+s.version          = "1.0.2"
 s.summary          = "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer"
 s.description      = "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer, so they are quick detect error & resolved it"
 s.homepage         = "https://github.com/thuydao/TDLog"
