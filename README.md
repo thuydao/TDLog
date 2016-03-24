@@ -20,6 +20,33 @@ it, simply add the following line to your Podfile:
 pod "TDLog"
 ```
 
+## Configure
+1. Project > Build Phases > Link Binary Libraries > add "TDLog.framework"
+1. Project > Build Phases > Copy Bundle Resources > add "TDLog.bundle"
+
+## Use TDLog
+```ruby
+TDLOG(@"%@","content log");
+```
+
+## Use Float Icon
+```ruby
+[[TDLogManagement td_sharedInstance] td_show];
+```
+
+## Filter follow color
+```ruby
+[[TDLogManagement td_sharedInstance].td_LogFilter setValue:@"text need highlight 1" forKey:L_Red];
+[[TDLogManagement td_sharedInstance].td_LogFilter setValue:@"text need highlight 2" forKey:L_LimeGreen];
+```
+
+## Handle Crash (send mail)
+//STEP1: You need add email of feeback on 'TD_EmailDevelopment' field in split file!!! ***";
+//STEP2: Insert '[TDEngineLog td_sharedManager];' into 'application:didFinishLaunchingWithOptions:'. The app will auto detect crash. So, enduser can choose the option to send crash log to mail did configure in above
+
+
+
+
 ## Author
 
 Mr Sa, daoduythuy@gmail.com
