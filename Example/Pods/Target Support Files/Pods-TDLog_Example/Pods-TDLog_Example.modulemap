@@ -1,0 +1,6 @@
+framework module Pods_TDLog_Example {
+  umbrella header "Pods-TDLog_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
