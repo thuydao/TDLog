@@ -11,7 +11,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Demo
 ![](https://lh3.googleusercontent.com/-zCnvcCzI4d8/VvOh5Bf5NHI/AAAAAAAAANU/gzEc0TZYaTIod_fUXJrs7h_zeNa80vR4g/w401-h534-no/Simulator%2BScreen%2BShot%2BMar%2B24%252C%2B2016%252C%2B3.13.14%2BPM.png)
-
 ![](https://lh3.googleusercontent.com/-o5HIKGwGCMg/VvOh5ICYoZI/AAAAAAAAANY/0tar37m7jGMbHLtrkAcDyRyZUOgCwF0pQ/w401-h534-no/Simulator%2BScreen%2BShot%2BMar%2B24%252C%2B2016%252C%2B3.13.20%2BPM.png)
 
 ## Requirements
@@ -47,6 +46,7 @@ TDLOG(@"%@","content log");
 
 ## Handle Crash (send mail)
 //STEP1: You need add email of feeback on 'TD_EmailDevelopment' field in split file!!! ***";
+
 //STEP2: Insert '[TDEngineLog td_sharedManager];' into 'application:didFinishLaunchingWithOptions:'. The app will auto detect crash. So, enduser can choose the option to send crash log to mail did configure in above
 
 
