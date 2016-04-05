@@ -1,6 +1,6 @@
 {
   "name": "TDLog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer",
   "description": "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer, so they are quick detect error & resolved it",
   "homepage": "https://github.com/thuydao/TDLog",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/thuydao/TDLog.git",
-    "tag": "1.0.2"
+    "tag": "1.0.3"
   },
   "ios": {
     "vendored_frameworks": "Frameworks/TDLog.framework"

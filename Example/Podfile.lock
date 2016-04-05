@@ -1,10 +1,10 @@
 PODS:
-  - FBSnapshotTestCase (2.0.7):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
-  - FBSnapshotTestCase/Core (2.0.7)
-  - FBSnapshotTestCase/SwiftSupport (2.0.7):
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
     - FBSnapshotTestCase/Core
-  - TDLog (1.0.2)
+  - TDLog (1.0.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  TDLog: c37c70d5c1e3c24a7551736360203090649193e4
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  TDLog: 9fae57275f16fba1d46106f8a5c88e599b2ee504
 
 COCOAPODS: 0.39.0
