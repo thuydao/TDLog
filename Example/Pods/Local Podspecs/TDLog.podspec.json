@@ -1,6 +1,6 @@
 {
   "name": "TDLog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "summary": "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer",
   "description": "TDLog is a iOS framework. You have beauty project and stable. It will easy to explain log for developer, so they are quick detect error & resolved it",
   "homepage": "https://github.com/thuydao/TDLog",
@@ -10,10 +10,7 @@
   },
   "source": {
     "git": "https://github.com/thuydao/TDLog.git",
-    "tag": "1.0.3"
-  },
-  "ios": {
-    "vendored_frameworks": "Frameworks/TDLog.framework"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "7.0"
@@ -27,8 +24,35 @@
     "CoreFoundation"
   ],
   "resource_bundles": {
-    "TDCore": [
-      "Resources/*.{bundle}"
+    "TDLog": [
+      "TDLog/*.png",
+      "TDLog/**/*.{xib,png,html,css}"
     ]
-  }
+  },
+  "public_header_files": [
+    "TDLog/**/*.h",
+    "TDLog/*.h"
+  ],
+  "subspecs": [
+    {
+      "name": "TDLog",
+      "source_files": "TDLog/*.h"
+    },
+    {
+      "name": "TDEngineLog",
+      "source_files": "TDLog/TDEngineLog/*"
+    },
+    {
+      "name": "TDFloatIcon",
+      "source_files": "TDLog/TDFloatIcon/*.{h,m}"
+    },
+    {
+      "name": "TDLogManagement",
+      "source_files": "TDLog/TDLogManagement/*.{h,m}"
+    },
+    {
+      "name": "TDLogView",
+      "source_files": "TDLog/TDLogView/*.{h,m}"
+    }
+  ]
 }

@@ -4,7 +4,17 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.0)
   - FBSnapshotTestCase/SwiftSupport (2.1.0):
     - FBSnapshotTestCase/Core
-  - TDLog (1.0.3)
+  - TDLog (1.0.4):
+    - TDLog/TDEngineLog (= 1.0.4)
+    - TDLog/TDFloatIcon (= 1.0.4)
+    - TDLog/TDLog (= 1.0.4)
+    - TDLog/TDLogManagement (= 1.0.4)
+    - TDLog/TDLogView (= 1.0.4)
+  - TDLog/TDEngineLog (1.0.4)
+  - TDLog/TDFloatIcon (1.0.4)
+  - TDLog/TDLog (1.0.4)
+  - TDLog/TDLogManagement (1.0.4)
+  - TDLog/TDLogView (1.0.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,6 +26,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
-  TDLog: 9fae57275f16fba1d46106f8a5c88e599b2ee504
+  TDLog: 7a28583a24fd09c9fa842a8555adf39947e1b308
 
 COCOAPODS: 0.39.0

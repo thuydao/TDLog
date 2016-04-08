@@ -1,0 +1,6 @@
+framework module TDLog {
+  umbrella header "TDLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

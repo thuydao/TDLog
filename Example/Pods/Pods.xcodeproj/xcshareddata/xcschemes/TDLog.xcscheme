@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '37BCA5E5DE5659EC5D445C70'
+               BlueprintIdentifier = 'B83B63FE298132BC738225C3'
                BlueprintName = 'TDLog'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TDLog.framework'>

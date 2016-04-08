@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDLogViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wvLog" destination="Afd-S8-v6K" id="veu-ei-FGo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9V-G8-bS6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-QB-mce">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <color key="backgroundColor" red="1" green="0.58349397043790319" blue="0.12313469128883503" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-Mw-j2c">
+                            <rect key="frame" x="107" y="0.0" width="106" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="Clear">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clearLogPress:" destination="-1" eventType="touchUpInside" id="O5w-5i-PmP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-E1-mpS">
+                            <rect key="frame" x="213" y="0.0" width="107" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="Email">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickSendMail:" destination="-1" eventType="touchUpInside" id="vFz-sX-YIJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY9-IO-gjr">
+                            <rect key="frame" x="0.0" y="0.0" width="107" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Hidden">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismisPress:" destination="-1" eventType="touchUpInside" id="DPZ-m0-Sca"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vY9-IO-gjr" secondAttribute="bottom" id="2W0-Pe-M2J"/>
+                        <constraint firstItem="yfQ-Mw-j2c" firstAttribute="leading" secondItem="vY9-IO-gjr" secondAttribute="trailing" id="CRE-lJ-3zd"/>
+                        <constraint firstItem="vY9-IO-gjr" firstAttribute="leading" secondItem="B9V-G8-bS6" secondAttribute="leading" id="FTE-3J-F4A"/>
+                        <constraint firstAttribute="trailing" secondItem="2l4-QB-mce" secondAttribute="trailing" id="TCt-qs-AKq"/>
+                        <constraint firstItem="yfQ-Mw-j2c" firstAttribute="width" secondItem="vY9-IO-gjr" secondAttribute="width" id="Z3Z-ak-9cR"/>
+                        <constraint firstItem="2l4-QB-mce" firstAttribute="leading" secondItem="B9V-G8-bS6" secondAttribute="leading" id="bGg-sL-X7e"/>
+                        <constraint firstAttribute="bottom" secondItem="2l4-QB-mce" secondAttribute="bottom" id="e3n-Ff-6My"/>
+                        <constraint firstAttribute="height" constant="64" id="fPm-yR-BaW"/>
+                        <constraint firstItem="cMZ-E1-mpS" firstAttribute="top" secondItem="B9V-G8-bS6" secondAttribute="top" id="hAO-NX-8eg"/>
+                        <constraint firstAttribute="trailing" secondItem="cMZ-E1-mpS" secondAttribute="trailing" id="iKd-d7-Wjq"/>
+                        <constraint firstItem="2l4-QB-mce" firstAttribute="top" secondItem="B9V-G8-bS6" secondAttribute="top" id="ktp-yv-xCL"/>
+                        <constraint firstItem="cMZ-E1-mpS" firstAttribute="leading" secondItem="yfQ-Mw-j2c" secondAttribute="trailing" id="sOk-Ts-QiO"/>
+                        <constraint firstAttribute="bottom" secondItem="yfQ-Mw-j2c" secondAttribute="bottom" id="sow-XI-goQ"/>
+                        <constraint firstAttribute="bottom" secondItem="cMZ-E1-mpS" secondAttribute="bottom" id="w1h-8Y-v1x"/>
+                        <constraint firstItem="vY9-IO-gjr" firstAttribute="top" secondItem="B9V-G8-bS6" secondAttribute="top" id="xGt-KJ-jJp"/>
+                        <constraint firstItem="cMZ-E1-mpS" firstAttribute="width" secondItem="vY9-IO-gjr" secondAttribute="width" id="xvl-cS-USg"/>
+                        <constraint firstItem="yfQ-Mw-j2c" firstAttribute="top" secondItem="B9V-G8-bS6" secondAttribute="top" id="yRn-el-A8r"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afd-S8-v6K">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Afd-S8-v6K" firstAttribute="top" secondItem="B9V-G8-bS6" secondAttribute="bottom" id="Htm-fj-rbx"/>
+                <constraint firstItem="B9V-G8-bS6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NxP-ms-02C"/>
+                <constraint firstAttribute="bottom" secondItem="Afd-S8-v6K" secondAttribute="bottom" id="gMq-Pp-DGX"/>
+                <constraint firstAttribute="trailing" secondItem="B9V-G8-bS6" secondAttribute="trailing" id="kJR-nr-ini"/>
+                <constraint firstAttribute="trailing" secondItem="Afd-S8-v6K" secondAttribute="trailing" id="uIa-Af-IMk"/>
+                <constraint firstItem="B9V-G8-bS6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x07-hL-vH2"/>
+                <constraint firstItem="Afd-S8-v6K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xr6-Zf-qFH"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="331" y="229"/>
+        </view>
+    </objects>
+</document>
